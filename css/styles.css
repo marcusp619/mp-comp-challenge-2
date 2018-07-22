@@ -31,8 +31,9 @@ main {
 
 .card {
   box-shadow: 2px 2px 2px grey;
-  width: 300px;
   background: white;
+  position: relative;
+  width: 300px;
 }
 
 .card-body {
@@ -40,8 +41,8 @@ main {
 }
 
 .card-body-link {
-  padding: 2px 5px;
   background: rgb(239, 239, 239);
+  padding: 2px 5px;
 }
 
 .card-body-link p {
@@ -49,8 +50,8 @@ main {
 }
 
 .card-body h4 {
-  margin-bottom: -15px;
   color: rgb(102, 102, 102);
+  margin-bottom: -15px;
 }
 
 .card-body p {
@@ -76,18 +77,18 @@ main {
 }
 
 .card-top-section {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 5px;
 }
 
 .card-top-section .fas {
   background: white;
-  color: rgb(77, 77, 77);
   border: 1px solid white;
   border-radius: 50%;
+  color: rgb(77, 77, 77);
   font-size: 1.4em;
   left: 20px;
   padding: 12px;
@@ -97,8 +98,8 @@ main {
 
 .card-views {
   color: white;
-  position: absolute;
   left: 235px;
+  position: absolute;
   top: -12px;
 }
 
@@ -113,12 +114,11 @@ main {
 }
 
 .img {
-  height: 150px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)
   ), url(https://source.unsplash.com/random/300x300?v=1);
-  
+  height: 150px;
   width: 100%;
 }
 
@@ -126,7 +126,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 15px 5px;
-  position: relative;
+  
 }
 
 .fa .far {
@@ -142,10 +142,10 @@ main {
 }
 
 .menu {
+  align-self: center;
   display: flex;
   grid-column: 1;
   grid-row: 2;
-  align-self: center;
   justify-content: space-around;
 }
 
@@ -159,8 +159,8 @@ main {
 
 .fas {
   color: rgb(69, 133, 183);
-  margin-right: 8px;
   font-size: 1.4em;
+  margin-right: 8px;
 }
 
 .user-admin {
@@ -171,10 +171,9 @@ main {
 }
 
 .user-admin a {
-  margin-right: 5px;
   color: rgb(69, 133, 183);
+  margin-right: 5px;
 }
-
 
 /*======STATE=====*/
 /*======THEME=====*/
