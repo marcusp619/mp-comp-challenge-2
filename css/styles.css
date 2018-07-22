@@ -2,19 +2,13 @@
 /*======BASE======*/
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 /*=====LAYOUT=====*/
 a {
   color: #fff;
+  font-weight: 300;
   text-decoration: none;
-}
-
-.active .fas {
-  color: #fff;
-}
-
-.fa .far {
-  font-size: 25px;
 }
 
 header {
@@ -23,6 +17,120 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+}
+
+main {
+  padding: 10px;
+  background: rgb(239, 239, 239);
+}
+
+/*=====MODULE=====*/
+.active .fas {
+  color: #fff;
+}
+
+.card {
+  box-shadow: 2px 2px 2px grey;
+  width: 300px;
+  background: white;
+}
+
+.card-body {
+  padding: 0 20px;
+}
+
+.card-body-link {
+  padding: 2px 5px;
+  background: rgb(239, 239, 239);
+}
+
+.card-body-link p {
+  color: rgb(119, 119, 119);
+}
+
+.card-body h4 {
+  margin-bottom: -15px;
+  color: rgb(102, 102, 102);
+}
+
+.card-body p {
+  color: rgb(175, 175, 175);
+  font-weight: bold;
+  font-size: .8em;
+}
+
+.card-body h3 {
+  color: rgb(89, 182, 248);
+  font-weight: 400;
+  font-size: 1.9em;
+  margin-bottom: 10px;
+  margin-top: -25px;
+}
+
+.card-playlist h4 {
+  font-weight: 400;
+}
+
+.card-playlist h6 {
+  margin-bottom: -20px;
+}
+
+.card-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+}
+
+.card-top-section .fas {
+  background: white;
+  color: rgb(77, 77, 77);
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.4em;
+  left: 20px;
+  padding: 12px;
+  position: absolute;
+  top: 15px;
+}
+
+.card-views {
+  color: white;
+  position: absolute;
+  left: 235px;
+  top: -12px;
+}
+
+.card-views h5 {
+  font-weight: 300;
+  margin-bottom: -35px;
+}
+
+.card-views h4 {
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+.img {
+  height: 150px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.45)
+  ), url(https://source.unsplash.com/random/300x300?v=1);
+  
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px 5px;
+  position: relative;
+}
+
+.fa .far {
+  font-size: 25px;
 }
 
 .logo {
@@ -52,6 +160,7 @@ header {
 .fas {
   color: rgb(69, 133, 183);
   margin-right: 8px;
+  font-size: 1.4em;
 }
 
 .user-admin {
@@ -66,7 +175,7 @@ header {
   color: rgb(69, 133, 183);
 }
 
-/*=====MODULE=====*/
+
 /*======STATE=====*/
 /*======THEME=====*/
 
