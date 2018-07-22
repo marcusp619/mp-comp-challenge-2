@@ -1,0 +1,72 @@
+
+/*======BASE======*/
+body {
+  margin: 0;
+}
+/*=====LAYOUT=====*/
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.active .fas {
+  color: #fff;
+}
+
+.fa .far {
+  font-size: 25px;
+}
+
+header {
+  background-color: rgb(43, 43, 43);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.logo {
+  font-size: 1.4rem;
+  grid-column: -2;
+  grid-row: 2;
+  justify-self: end;
+  margin-right: 30px;
+}
+
+.menu {
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: rgb(122, 122, 122);
+}
+
+.menu .active {
+  color: #fff;
+}
+
+.fas {
+  color: rgb(69, 133, 183);
+  margin-right: 8px;
+}
+
+.user-admin {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin: 10px 15px;
+}
+
+.user-admin a {
+  margin-right: 5px;
+  color: rgb(69, 133, 183);
+}
+
+/*=====MODULE=====*/
+/*======STATE=====*/
+/*======THEME=====*/
+
