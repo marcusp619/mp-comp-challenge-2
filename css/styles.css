@@ -19,6 +19,10 @@ header {
   grid-template-rows: 1fr;
 }
 
+h2 {
+  font-size: 2.0rem;
+}
+
 main {
   padding: 10px;
   background: rgb(239, 239, 239);
@@ -43,10 +47,14 @@ main {
 .card-body-link {
   background: rgb(239, 239, 239);
   padding: 2px 5px;
+
 }
 
 .card-body-link p {
   color: rgb(119, 119, 119);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .card-body h4 {
@@ -117,7 +125,7 @@ main {
   background: linear-gradient(
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.45)
-  ), url(https://source.unsplash.com/random/300x300?v=1);
+  ), url(https://source.unsplash.com/random/300x300/?portrait);
   height: 150px;
   width: 100%;
 }
@@ -126,7 +134,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 15px 5px;
-  
+  transition-duration: 1s;
+  justify-items: center;
 }
 
 .fa .far {
@@ -170,11 +179,105 @@ main {
   margin: 10px 15px;
 }
 
+.user-admin .far {
+  color: #fff;
+}
+
 .user-admin a {
   color: rgb(69, 133, 183);
   margin-right: 5px;
+  
 }
 
 /*======STATE=====*/
+
+a:hover {
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 1s;
+}
+
+.card { 
+  transition: all .4s ease-in-out; 
+}
+.card:hover {
+  box-shadow: 3px 3px 10px black; 
+  transform: scale(1.1);
+  z-index: 99;
+}
 /*======THEME=====*/
 
+@media screen and (max-width: 850px) {
+  .logo {
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: normal;
+    margin-left: 30px;
+  }
+
+  .menu {
+    align-self: center;
+    display: flex;
+    grid-column: span 2;
+    grid-row: 2;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .user-admin {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .menu {
+    font-size: .7rem;
+  }
+  .user-admin a {
+    font-size: .5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .fas {
+    margin-right: 0px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    margin-right: 30px
+  }
+
+  .menu {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    font-size: 0.7rem;
+    margin-left: 2px;
+  }
+
+  .user-admin {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    margin: 10px 15px;
+    font-size: 0.7rem;
+    text-align: right;
+    align-self: center;
+  }
+
+  .user-admin .far {
+    margin-right: 2px;
+  }
+}
