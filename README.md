@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 — Open index.html
 
 ## Original Design
-[Original Challenge Requirements](http://frontend.turing.io/projects/m1-static-comp-1.html))
+[Original Challenge Requirements](http://frontend.turing.io/projects/m1-static-comp-1.html)
 ![Original Design](https://github.com/marcusp619/mp-comp-challenge-2/blob/master/Original%20Design.png?raw=true)
 ## My Design
 ![Website Design](https://github.com/marcusp619/mp-comp-challenge-2/blob/master/MyScreenshot.png?raw=true)
